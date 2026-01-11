@@ -1,7 +1,13 @@
 Core Components and attributes
-  <View>
-  <Text>
-  <Input>
-  <Button>
+  1. <View>
+  2. <Text>
+  3. <Input>
+  4. <Button>
     - title
     - onPress
+
+
+Styling
+  1. Ways to use Styling in React Native
+    - Inline Style
+    - StyleSheet Objects
