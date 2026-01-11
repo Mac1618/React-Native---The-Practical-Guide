@@ -1,7 +1,8 @@
 Core Components and attributes
   1. <View>
   2. <Text>
-  3. <Input>
+  3. <TextInput>
+    - placeholder
   4. <Button>
     - title
     - onPress
@@ -11,3 +12,12 @@ Styling
   1. Ways to use Styling in React Native
     - Inline Style
     - StyleSheet Objects
+
+  2. Layouts & Flexbox
+    - sample Style
+      {
+        flex: 1,
+        flexDirection: 'column',
+        justifyContent: 'flex-start',
+        alignItems: 'flex-start'
+      }

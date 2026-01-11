@@ -1,43 +1,42 @@
-import { StatusBar } from 'expo-status-bar';
-import { Alert, Button, StyleSheet, Text, View } from 'react-native';
+import { Alert, Button, StyleSheet, Text, TextInput, View } from 'react-native';
 
 export default function App() {
 	return (
-		<View style={styles.container}>
-			<Text>React Native - Styling</Text>
-			<StatusBar style="auto" />
-
-			<View>
-				{/* Inline Style */}
-				<Text
-					style={{
-						borderWidth: 2,
-            borderColor: "blue",
-						color: 'blue',
-						padding: 2,
-					}}
-				>
-					For testing
-				</Text>
-
-				{/* StyleSheet Objects */}
-				<Text style={styles.test_2}>Testing 2</Text>
+		<View style={styles.appContainer}>
+			<View style={styles.inputContainer}>
+				<TextInput style={styles.textContainer} placeholder="Your course goal" />
+				<Button title="Add Goal" />
+			</View>
+			<View style={styles.goalsContainer}>
+				<Text>List of goals...</Text>
 			</View>
 		</View>
 	);
 }
 
 const styles = StyleSheet.create({
-	container: {
+	appContainer: {
 		flex: 1,
-		backgroundColor: '#fff',
-		alignItems: 'center',
-		justifyContent: 'center',
+		paddingTop: 50,
+		paddingHorizontal: 40,
 	},
-	test_2: {
-		marginTop: 5,
-		backgroundColor: 'green',
-		color: 'white',
-		padding: 2,
+	inputContainer: {
+		flex: 1,
+		flexDirection: 'row',
+		justifyContent: 'space-between',
+		alignItems: 'center',
+		marginBottom: 24,
+		borderBottomWidth: 1,
+		borderColor: '#cccccc',
+	},
+	textContainer: {
+		borderWidth: 2,
+		borderColor: '#cccccc',
+		width: '70%',
+		marginRight: 8,
+		padding: 8,
+	},
+	goalsContainer: {
+		flex: 6,
 	},
 });
