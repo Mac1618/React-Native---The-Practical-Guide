@@ -21,3 +21,11 @@ Styling
         justifyContent: 'flex-start',
         alignItems: 'flex-start'
       }
+
+React Native Styling Rules
+  1. borderRadius dont work in iOS
+    - need to use <View> and wrap the <Text>
+
+  2. Styles don't cascade
+    - child element dont inherit the style form parents
+    - each core components are stand alone
