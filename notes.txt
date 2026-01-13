@@ -1,4 +1,4 @@
-Core Components and attributes
+Core Components and attributes and meanings
   1. <View>
   2. <Text>
   3. <TextInput>
@@ -6,7 +6,10 @@ Core Components and attributes
   4. <Button>
     - title
     - onPress
-
+  5. ScrollView
+    - meanings        - wraps the elements to have a scrollable bar
+    - meanings        - inherits the size of the parents that sometimes causes confussions
+    - attributs       - https://reactnative.dev/docs/scrollview
 
 Styling
   1. Ways to use Styling in React Native
