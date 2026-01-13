@@ -1,15 +1,25 @@
 Core Components and attributes and meanings
   1. <View>
   2. <Text>
+
   3. <TextInput>
     - placeholder
+
   4. <Button>
     - title
     - onPress
+
   5. ScrollView
     - meanings        - wraps the elements to have a scrollable bar
     - meanings        - inherits the size of the parents that sometimes causes confussions
     - attributs       - https://reactnative.dev/docs/scrollview
+
+  6. FlatList
+    - data                       - array of Objects
+    - renderItem                 - a function that maps all the data passed in "data" attribute
+    - keyExtractor               - a function that changes the reference of "key" value in maps 
+                                 - (default: if the object has "key" name it will automatically select this)
+    - alwaysBounceVertical       - for iOS to animate vertical scroll
 
 Styling
   1. Ways to use Styling in React Native
@@ -32,3 +42,16 @@ React Native Styling Rules
   2. Styles don't cascade
     - child element dont inherit the style form parents
     - each core components are stand alone
+
+
+React Native Optimizations
+  1. ScrollView vs FlatList
+      NOTE                  - they both have same attributes to use
+
+      - ScrollView          - renders all the items even if its not shown on the screen
+                            - can cause performance issue
+                            - recommended to use for limited items
+
+      - FlatList            - only render the item that are on the screen
+                            - all the items that are off the screen will only be rendered lazily
+                            - recommeded for dynamic items
