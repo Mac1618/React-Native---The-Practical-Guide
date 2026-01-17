@@ -55,3 +55,8 @@ React Native Optimizations
       - FlatList            - only render the item that are on the screen
                             - all the items that are off the screen will only be rendered lazily
                             - recommeded for dynamic items
+
+JavaScript Extra Infos
+  1. bind()                 - used in functions
+                            - allows to pre-configure a function for future execution 
+                            - contains 2 parameters (this, value)
