@@ -21,6 +21,17 @@ Core Components and attributes and meanings
                                  - (default: if the object has "key" name it will automatically select this)
     - alwaysBounceVertical       - for iOS to animate vertical scroll
 
+  7. Pressable                   - latest core components to add functionality
+    - onPress                    - similar functionality with react onClick attribute
+    - android_ripple             - adds a ripple or animation effect (for android)
+    - style ({pressable}) => void- affects both android and iOS
+
+  8. Touchable                   - the older ways on using Pressable
+
+  9. Modal                       - a popup modal that shows up in the screen 
+    - animationType              - can select either: "slide", "fade", or "none"
+    - visible                    - modal visibility
+
 Styling
   1. Ways to use Styling in React Native
     - Inline Style
